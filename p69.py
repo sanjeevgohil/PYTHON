@@ -1,0 +1,13 @@
+from tkinter import *
+root = Tk()
+root.title('PanedWindow Demo')
+root.geometry("400x400")
+pw = PanedWindow(orient=HORIZONTAL)
+t1 = Text(root)
+t1.pack(side=LEFT)
+pw.add(t1)
+t2 = Text(root)
+t2.pack(side=RIGHT)
+pw.add(t2)
+pw.pack(fill=BOTH, expand=True)
+root.mainloop()
